@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Batsmen</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Runs</th>
+    <th>Mat</th>
+    <th>inns</th>
+    <th>NotOuts</th>
+    <th>HS</th>
+    <th>AVG</th>
+    <th>BF</th>
+    <th>SR</th>
+    <th>Centuries</th>
+    <th>Half-Centuries</th>
+    <th>Fours</th>
+    <th>Sixes</th>
+  </tr>
+  <tr th:each="batsman: ${batsmen}">
+    <td th:text="${batsman.pos}"></td>
+    <td th:text="${batsman.player}"></td>
+    <td th:text="${batsman.runs}"></td>
+    <td th:text="${batsman.inns}"></td>
+    <td th:text="${batsman.mat}"></td>
+    <td th:text="${batsman.notout}"></td>
+    <td th:text="${batsman.hs}"></td>
+    <td th:text="${batsman.average}"></td>
+    <td th:text="${batsman.bf}"></td>
+    <td th:text="${batsman.sr}"></td>
+    <td th:text="${batsman.centuries}"></td>
+    <td th:text="${batsman.half_centuries}"></td>
+    <td th:text="${batsman.fours}"></td>
+    <td th:text="${batsman.sixes}"></td>
+
+  </tr>
+</table>
+</body>
+</html>
+<!--private Integer pos;-->
+<!--private String player;-->
+<!--private Integer runs;-->
+<!--private Integer mat;-->
+<!--private Integer inns;-->
+<!--private Integer notout;-->
+<!--private String hs;-->
+<!--private BigDecimal average;-->
+<!--private Integer bf;-->
+<!--private BigDecimal sr;-->
+<!--private Integer centuries;-->
+<!--private Integer half_centuries;-->
+<!--private Integer fours;-->
+<!--private Integer sixes;-->

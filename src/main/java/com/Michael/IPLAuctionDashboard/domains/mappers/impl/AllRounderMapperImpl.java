@@ -20,6 +20,7 @@ public class AllRounderMapperImpl implements AllRounderMapper {
                 null,
                 allRounderDTO.runs(),
                 allRounderDTO.wickets(),
+                allRounderDTO.economy(),
                 allRounderDTO.matches(),
                 allRounderDTO.strikeRate()
         );
@@ -38,6 +39,7 @@ public class AllRounderMapperImpl implements AllRounderMapper {
                 allRounder.getTeam() != null ? allRounder.getTeam().getId() :null,
                 allRounder.getRuns(),
                 allRounder.getWickets(),
+                allRounder.getEconomy(),
                 allRounder.getMatches(),
                 allRounder.getStrikeRate()
         );

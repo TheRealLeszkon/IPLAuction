@@ -16,7 +16,7 @@ VALUES
 ('Deepak Chahar', 'India', 6000000.00, 'https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/playerimages/Deepak%20Chahar.png', 'FOR_SALE', NULL, NULL, 59, 63, 29.25, '4/13');
 
 -- Insert All-Rounders
-INSERT INTO all_rounders (name, association, price, image_links, status, sold_price, team_id, runs, wickets, matches, strike_rate)
+INSERT INTO all_rounders (name, association, price, image_links, status, sold_price, team_id, runs, wickets,economy, matches, strike_rate)
 VALUES
-('Hardik Pandya', 'India', 17000000.00, 'https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/playerimages/Hardik%20Pandya.png', 'FOR_SALE', NULL, NULL, 1963, 50, 125, 140.85),
-('Moeen Ali', 'England', 9000000.00, 'https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/playerimages/Moeen%20Ali.png', 'FOR_SALE', NULL, NULL, 1033, 33, 75, 135.50);
+('Hardik Pandya', 'India', 17000000.00, 'https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/playerimages/Hardik%20Pandya.png', 'FOR_SALE', NULL, NULL, 1963, 50,23.50, 125, 140.85),
+('Moeen Ali', 'England', 9000000.00, 'https://ipl-stats-sports-mechanic.s3.ap-south-1.amazonaws.com/ipl/playerimages/Moeen%20Ali.png', 'FOR_SALE', NULL, NULL, 1033, 33,23.50, 75, 135.50);

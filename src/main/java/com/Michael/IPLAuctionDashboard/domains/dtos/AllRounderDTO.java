@@ -16,6 +16,7 @@ public record AllRounderDTO(
         Integer teamId,
         Integer runs,
         Integer wickets,
+        BigDecimal economy,
         Integer matches,
         BigDecimal strikeRate
 ) {

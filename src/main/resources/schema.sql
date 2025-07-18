@@ -20,6 +20,7 @@ CREATE TABLE all_rounders (
     team_id INTEGER REFERENCES teams(id),
     runs INTEGER,
     wickets INTEGER,
+    economy NUMERIC(6, 2),
     matches INTEGER,
     strike_rate NUMERIC(6, 2)
 );

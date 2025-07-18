@@ -39,6 +39,8 @@ public class AllRounder {
     private Integer runs;
     @Column(name = "wickets")
     private Integer wickets;
+    @Column(name = "economy")
+    private BigDecimal economy;
     @Column(name = "matches")
     private Integer matches;
     @Column(name = "strike_rate",precision = 6,scale = 2)

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public record PurchaseDTO(
         Integer id,
-        Integer teamId,
+        String teamId,
         Integer playerId,
         BigDecimal soldPrice,
         String playerType

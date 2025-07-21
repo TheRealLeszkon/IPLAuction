@@ -22,19 +22,24 @@ public class TeamServiceImpl implements TeamService {
     }
 
     @Override
-    public Team findTeam(Integer id) {
-        return teamRepository.findById(id)
+    public Team findTeam(String id) {
+        return teamRepository.findById(id.toUpperCase())
                 .orElseThrow(() ->new IllegalArgumentException("No Such Team Exists in DB!"));
     }
 
     @Override
     public Team createTeam(Team team) {
+        if(team.getId()==null || team.getId().isBlank()){
+            throw new IllegalArgumentException("Can't create a team without an ID!");
+        }
+        team.setId(team.getId().toUpperCase());
         team.setBalance(new BigDecimal("1000000000.00"));
         return teamRepository.save(team);
     }
 
     @Override
     public void updateTeam(Team team) {
+        team.setId(team.getId().toUpperCase());
         teamRepository.save(team);
     }
 }

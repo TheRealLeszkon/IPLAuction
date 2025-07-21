@@ -12,7 +12,7 @@ public record BowlerDTO (
         String imageLink,
         PlayerStatus status,
         BigDecimal soldPrice,
-        Integer teamId,
+        String teamId,
         Integer matches,
         Integer wickets,
         BigDecimal economy,

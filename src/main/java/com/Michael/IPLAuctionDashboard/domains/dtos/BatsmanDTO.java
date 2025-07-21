@@ -12,7 +12,7 @@ public record BatsmanDTO(
         String imageLink,
         PlayerStatus status,
         BigDecimal soldPrice,
-        Integer teamId,
+        String teamId,
         Integer runs,
         Integer matches,
         BigDecimal battingAvg,

@@ -18,7 +18,7 @@ public class Purchase {
     @Column(name = "id",updatable = false)
     private Integer id;
     @Column(name = "team_id")
-    private Integer teamId;
+    private String teamId;
     @Column(name = "player_id")
     private Integer playerId;
     @Column(name = "sold_price",precision = 15,scale = 2)

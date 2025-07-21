@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface TeamService {
     List<Team> listTeams();
-    Team findTeam(Integer id);
+    Team findTeam(String id);
 
     Team createTeam(Team team);
 

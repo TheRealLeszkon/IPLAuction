@@ -1,7 +1,7 @@
 -- Insert Teams
-INSERT INTO teams (name, balance) VALUES
-('Mumbai Indians', 200000000.00),
-('Chennai Super Kings', 180000000.00);
+INSERT INTO teams (id,name, balance) VALUES
+('MI','Mumbai Indians', 200000000.00),
+('CSK','Chennai Super Kings', 180000000.00);
 
 -- Insert Batsmen
 INSERT INTO batsmen (name, association, price, image_links, status, sold_price, team_id, runs, matches, batting_avg, strike_rate)

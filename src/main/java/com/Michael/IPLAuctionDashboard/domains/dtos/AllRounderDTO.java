@@ -13,7 +13,7 @@ public record AllRounderDTO(
         PlayerStatus status,
 
         BigDecimal soldPrice,
-        Integer teamId,
+        String teamId,
         Integer runs,
         Integer wickets,
         BigDecimal economy,

@@ -31,7 +31,7 @@ public class TeamController {
         );
     }
     @GetMapping("/{id}")
-    public ResponseEntity<TeamDTO> findTeam(@PathVariable Integer id){
+    public ResponseEntity<TeamDTO> findTeam(@PathVariable String id){
         TeamDTO foundTeam = teamMapper.toDTO(teamService.findTeam(id));
         return new ResponseEntity<>(foundTeam,HttpStatus.OK);
     }

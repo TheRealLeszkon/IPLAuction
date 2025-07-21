@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public record TeamDTO (
-        Integer id,
+        String id,
         String name,
         BigDecimal balance,
         List<BatsmanDTO> batsmanDTOList,

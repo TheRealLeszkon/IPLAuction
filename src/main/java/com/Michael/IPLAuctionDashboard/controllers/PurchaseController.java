@@ -32,4 +32,13 @@ public class PurchaseController {
         List<PurchaseDTO> allPurchases =purchaseService.listAllPurchases().stream().map(purchaseMapper::toDTO).toList();
         return new ResponseEntity<>(allPurchases,HttpStatus.OK);
     }
+    @PostMapping("/refund/{player_type}/{player_id}")
+    public ResponseEntity<String> refundPlayer(
+            @PathVariable("player_type") String playerType,
+            @PathVariable("player_id") Integer playerID
+    ){
+        purchaseService.refundPlayer(playerType,playerID);
+        return ResponseEntity.ok("Refund Successful!");
+    }
+
 }
